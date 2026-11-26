@@ -1,0 +1,428 @@
+>> % bab 3 soal Matlab 3.1
+>> % soal 3.1
+
+Panjang = 5;
+
+Lebar = 20;
+
+Luas = Panjang * Lebar
+
+Luas =
+
+   100
+
+>> % bab 3 soal Matlab 3.2
+>> % soal 3.2
+
+>> P = 'Thanisa Nashwa Azura'
+
+P =
+
+Thanisa Nashwa Azura
+
+
+>> double(P)
+
+ans =
+
+    84   104    97   110   105   115    97    32    78    97 ...
+   115   104   119    97    32    65   122   117   114    97
+
+
+>> abs(P)
+
+ans =
+
+    84   104    97   110   105   115    97    32    78    97 ...
+   115   104   119    97    32    65   122   117   114    97
+
+
+>> char(P)
+
+ans =
+
+Thanisa Nashwa Azura
+
+
+>> t = P(5:8)
+
+t =
+
+
+
+    isa
+
+>> % bab 3 soal Matlab 3.3
+>> % soal 3.3
+
+>> a = 'Heru Dibyo Laksono'
+
+a =
+
+    'Heru Dibyo Laksono'
+
+>> b = 'Jurusan Teknik Elektro'
+
+b =
+
+    'Jurusan Teknik Elektro'
+
+>>  c = 'Fakultas Teknik'
+
+c =
+
+    'Fakultas Teknik'
+
+>> d = 'Universitas Andalas'
+
+d =
+
+    'Universitas Andalas'
+
+>> % bab 3 soal Matlab 3.4
+>> % soal 3.4
+>> disp(a)
+Heru Dibyo Laksono
+>> disp(b) 
+Jurusan Teknik Elektro
+>> disp(c)
+Fakultas Teknik
+>> disp(d) 
+Universitas Andalas
+
+>> % bab 3 soal Matlab 3.5
+>> % soal 3.5
+>> disp(‘Reri Afrianita’)
+Reri Afrianita
+>> disp(‘Jurusan Teknik Lingkungan’)
+Jurusan Teknik Lingkungan
+>> disp(‘Fakultas Teknik’) 
+Fakultas Teknik
+>> disp(‘Universitas Andalas’) 
+Universitas Andalas
+
+>> % bab 3 soal Matlab 3.6
+>> % soal 3.6
+>> No_Pendaftaran = 123450654321;
+>> disp([‘No. Pendaftaran saya adalah ‘,num2str(No_Pendaftaran)])
+No. Pendaftaran saya adalah 123450654321
+
+>> % bab 3 soal Matlab 3.7
+>> % soal 3.7
+>> No_nim = input(' Masukkan No Nim Anda : ','s')
+ Masukkan No Nim Anda : 160326001
+
+No_nim =
+
+    '160326001'
+
+>> % bab 3 soal Matlab 3.8
+>> % soal 3.8
+>> x = 'Budi Sampurno';
+y = 'PT. Sampoerna Indonesia';
+>> fprintf('%s\n',x)
+Budi Sampurno
+>>  fprintf('%s\n',y)
+PT. Sampoerna Indonesia
+
+>> % bab 3 soal Matlab 3.9
+>> % soal 3.9
+>> p = {'Objek Wisata di Sumatera Barat';
+'Bukittingi dengan Objek Wisata Jam Gadang';
+'Solok dengan Objek Wisata Danau Singkarak';
+'Tanahdatar dengan Objek Wisata Istano Pagaruyung';
+'Sawahlunto dengan Objek Wisata Tambang Dalam'}
+
+p =
+
+  5×1 cell array
+
+    {'Objek Wisata di Sumatera Barat'                  }
+    {'Bukittingi dengan Objek Wisata Jam Gadang'       }
+    {'Solok dengan Objek Wisata Danau Singkarak'       }
+    {'Tanahdatar dengan Objek Wisata Istano Pagaruyung'}
+    {'Sawahlunto dengan Objek Wisata Tambang Dalam'    }
+
+>> % bab 3 soal Matlab 3.10
+>> % soal 3.10
+>> whos 
+  Name      Size            Bytes  Class    Attributes
+  p         5x1               968  cell               
+>> p(1)
+ans = 
+    {Objek Wisata di Sumatera Barat}
+>> p(2)
+ans = 
+    {Bukittingi dengan Objek Wisata Jam Gadang}
+>> p(3)
+ans = 
+    {Solok dengan Objek Wisata Danau Singkarak}
+>> p(4)
+ans = 
+    {Tanahdatar dengan Objek Wisata Istano Pagaruyung}
+>> p(5)
+ans = 
+    {Sawahlunto dengan Objek Wisata Tambang Dalam}
+
+>> % bab 3 soal Matlab 3.11
+>> % soal 3.11
+clc
+clear all 
+close all
+close all hidden 
+% 
+Mahasiswa.Nama = ‘Rudi Sujarwo’;
+Mahasiwa.NIM = ‘95171041’;
+Mahasiwa.Prodi = ‘Teknik Mesin’;
+Mahasiswa(2).Nama = ‘Rudi Sujarwi’;
+Mahasiwa(2).NIM = ‘95172042’;
+Mahasiwa(2).Prodi = ‘Teknik Sipil’;
+Mahasiswa(3).Nama = ‘Rudi Sukarwo’;
+Mahasiwa(3).NIM = ‘95173043’;
+Mahasiwa(3).Prodi = ‘Teknik Industri’;
+Mahasiswa(4).Nama = ‘Rudi Sukarwijo’;
+Mahasiwa(4).NIM = ‘95175044’;
+Mahasiwa(4).Prodi = ‘Teknik Lingkungan’;
+Mahasiswa(5).Nama = ‘Rudi Sukarmanto’;
+Mahasiwa(5).NIM = ‘95175045’;
+Mahasiwa(5).Prodi = ‘Teknik Elektro’;
+%
+M1 = Mahasiswa(1)
+M2 = Mahasiswa(2)
+M3 = Mahasiswa(3)
+M4 = Mahasiswa(4)
+M5 = Mahasiswa(5)
+
+M1 = 
+
+  struct with fields:
+
+    Nama: 'Rudi Sujarwo'
+
+
+M2 = 
+
+  struct with fields:
+
+    Nama: 'Rudi Sujarwi'
+
+
+M3 = 
+
+  struct with fields:
+
+    Nama: 'Rudi Sukarwo'
+
+
+M4 = 
+
+  struct with fields:
+
+    Nama: 'Rudi Sukarwijo'
+
+
+M5 = 
+
+  struct with fields:
+
+    Nama: 'Rudi Sukarmanto'
+
+>> % bab 3 soal Matlab 3.12
+>> % soal 3.12
+clc
+clear all 
+close all 
+close all hidden 
+%
+gunung = struct(‘Situs’,{‘Rinjani’,’Merapi’},...
+    ‘Waktu’,{2.34},...
+    ‘Temperatur’,{24  19},...
+    ‘Tekanan’,{1023  1015},...
+    ‘Ketinggian’,{2024 2012})
+%
+G1 = gunung(1) 
+
+gunung = 
+
+  1×2 struct array with fields:
+
+    Situs
+    Waktu
+    Temperatur
+    Tekanan
+    Ketinggian
+
+
+G1 = 
+
+  struct with fields:
+
+         Situs: 'Rinjani'
+         Waktu: 2.3400
+    Temperatur: 24
+       Tekanan: 1023
+    Ketinggian: 2024
+
+
+G2 = 
+
+  struct with fields:
+
+         Situs: 'Merapi'
+         Waktu: 2.3400
+    Temperatur: 19
+       Tekanan: 1015
+    Ketinggian: 2012
+
+>> % bab 3 soal Matlab 3.13
+>> % soal 3.13
+>> A = [ 7  8  9; 4  2  6; 1 2 3]
+
+A = 3×3
+     7     8     9
+     4     2     6
+     1     2     3
+
+>> A(:,:,2) = A*4
+
+A(:,:,1) =
+
+     7     8     9
+     4     2     6
+     1     2     3
+
+
+A(:,:,2) =
+
+    28    32    36
+    16     8    24
+     4     8    12
+
+>> A(:,:,3) = eye(3)
+
+A(:,:,1) =
+
+     7     8     9
+     4     2     6
+     1     2     3
+
+
+A(:,:,2) =
+
+    28    32    36
+    16     8    24
+     4     8    12
+
+
+A(:,:,3) =
+
+     1     0     0
+     0     1     0
+     0     0     1
+
+>> % bab 3 soal Matlab 3.14
+>> % soal 3.14
+>> A(:,:,3) = 4
+
+A(:,:,1) =
+
+     7     8     9
+     4     2     6
+     1     2     3
+
+
+A(:,:,2) =
+
+    28    32    36
+    16     8    24
+     4     8    12
+
+
+A(:,:,3) =
+
+     4     4     4
+     4     4     4
+     4     4     4
+
+>> % bab 3 soal Matlab 3.15
+>> % soal 3.15
+>> A(2,:,1)
+
+ans = 1×3
+     4     2     6
+
+>> A(2,:,2)
+
+ans = 1×3
+     16     8     24
+
+>> A(2,:,:)
+
+ans(:,:,1) =
+
+     4     2     6
+
+
+ans(:,:,2) =
+
+    16     8    24
+
+
+ans(:,:,3) =
+
+     4     4     4
+
+>> % bab 3 soal Matlab 3.16
+>> % soal 3.16
+>> A(:,:,2) = []
+
+A(:,:,1) =
+
+     7     8     9
+     4     2     6
+     1     2     3
+
+
+A(:,:,2) =
+
+     4     4     4
+     4     4     4
+     4     4     4
+
+>> % bab 3 soal Matlab 3.17
+>> % soal 3.17
+>> A(:)’
+ans = 1×18
+  Columns 1 through 10
+
+     7     4     1     8     2     2     9     6     3     4
+
+  Columns 11 through 18
+
+     4     4     4     4     4     4     4     4
+
+>> % bab 3 soal Matlab 3.18
+>> % soal 3.18
+>> clf
+[x,y] = meshgrid(1:4,1:4)
+plot(x,y,'o')
+axis([0.90  5.00  0.90   3.00])
+[x,y] = meshgrid(linspace(-5,5),linspace(-5,5));
+r = sqrt(x.^3 + y.^3);
+contour(x,y,r)
+axis equal
+axis([-10.00  10.00  -10.00   10.00])
+grid on
+
+x = 4×4
+     1     2     3     4
+     1     2     3     4
+     1     2     3     4
+     1     2     3     4
+
+
+y = 4×4
+     1     1     1     1
+     2     2     2     2
+     3     3     3     3
+     4     4     4     4
